@@ -59,6 +59,9 @@ ol {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+/* .section:first-child{
+    padding-bottom: 0;
+} */
 /*----------------------header--------------*/
 .header{
     border-bottom: 1px solid #ECECEC;
@@ -182,7 +185,16 @@ ol {
 .features{
     display: flex;
 }
-
+.section-features{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+.features-list{
+    display: block;
+    width: 270px;
+}
 .features .features-list:not(:last-child){
     margin-right: 30px;
 
@@ -305,6 +317,7 @@ ol {
     margin-bottom: 9px;
 }
 .footer-mail{
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -315,6 +328,7 @@ ol {
     margin-bottom: 9px;
 }
 .footer-tel{
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -355,11 +369,11 @@ ol {
     background-color: #F5F4FA;
     cursor: pointer;
     border: none;
-    margin-right: 8px;
-   
+    padding: 6px 22px 6px 22px;
+    
 }
-.examples-btn .button :last-child{
-    margin-right: 0px;
+.examples-btn .li-btn:not(:last-child){
+    margin-right: 8px;
 }
 .button:hover,
 .button:focus {
